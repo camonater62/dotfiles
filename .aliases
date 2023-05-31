@@ -1,0 +1,40 @@
+# color auto time
+alias dir='dir --color=auto'
+alias vdir='vdir --color=auto'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+# ls spam
+alias ls='ls --color=auto'
+alias ls='lsd'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -F'
+alias lt='ls --tree'
+
+# ssh connections
+# [REDACTED]
+
+# utility
+alias view='vim -R'
+alias wm='networkmanager_dmenu'
+alias img='feh $(ls -A | grep -e jpg -e png -e gif| rofi -dmenu)'
+alias bigpkg="pacman -Qi | awk '/^Name/{name=\$3} /^Installed Size/{print \$4\$5, name}' | sort -hr | head -25"
+alias setwp='feh --bg-fill'
+alias nettest='ping 8.8.8.8'
+alias emsdk_setup "source ~/Apps/emsdk/emsdk_env.fish"
+
+# replacement
+alias cp='cp -iv'
+alias bat='bat -Pn'
+alias rm='rmtrash'
+alias python='python3'
+
+# special args
+alias isteam='VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/intel_icd.x86_64.json steam-runtime'
+
+# short hand
+alias cls='clear'
+alias ..='cd ..'
+alias br='source ~/.bashrc'
